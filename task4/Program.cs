@@ -1,13 +1,13 @@
 ﻿// определить  гирю вес которой наибольший из N гирь;
 
-int n = 13;
-int[] arr = new int[13] { 3, 6, 8, 42, 56, 85, 14, 25, 11, 52, 12, 48, 94 };
+int n = 13; //количество гирь
+int[] arr = new int[13] { 3, 6, 8, 42, 56, 85, 14, 25, 11, 52, 12, 48, 94 };//вес гирь
 int max = arr[0];
 int i = 0;
 
-while (i < n)
+while (i < n) //цикл "пока"
 {
-    if (arr[i] > max)
+    if (arr[i] > max) //через "если"
     {
         max = arr[i];
     }
@@ -15,8 +15,10 @@ while (i < n)
 }
 Console.WriteLine(max);
 
+//второй  вариант
+
 max = arr[0];
-for (int j = 0; j < n; j++)
+for (int j = 0; j < n; j++) //цикл "для"
 {
     if (arr[j] > max)
     {
@@ -26,10 +28,10 @@ for (int j = 0; j < n; j++)
 Console.WriteLine(max);
 
 
-
+//третий вариант
 
 max = arr[0];
-foreach (int e in arr)
+foreach (int e in arr) // цикл"форэч"
 {
     if (e > max)
     {
